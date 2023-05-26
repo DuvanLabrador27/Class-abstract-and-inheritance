@@ -52,4 +52,32 @@ public class Colection {
               }
               return cadena;
        }
+
+       public Figure higherPrice(){
+              double maxPrice = 0.0;
+              Figure maxFigure = null;
+              for (int i = 0; i < listfigures.size(); i++) {
+                     if(listfigures.get(i).getPrice()> maxPrice){
+                            maxPrice = listfigures.get(i).getPrice();
+                            maxFigure = listfigures.get(i);
+                     }
+              }
+              return  maxFigure;
+       }
+
+       public double getTotalPrice(){
+              double totalPrice = 0.0;
+              for (int i = 0; i < listfigures.size(); i++) {
+                     totalPrice += listfigures.get(i).getPrice();
+              }
+              return  totalPrice;
+       }
+
+       public double getMaxVolumen(){
+              double maxVol = 0.0;
+              for (int i = 0; i < listfigures.size(); i++) {
+                     maxVol += listfigures.get(i).getDimension().getVolumen() ;
+              }
+              return  maxVol + 200;
+       }
 }

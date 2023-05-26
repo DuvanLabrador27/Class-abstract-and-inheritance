@@ -6,7 +6,8 @@ public class Figure {
     private SuperHero superHero;
     private Dimension dimension;
 
-    public Figure(){}
+    public Figure() {
+    }
 
     public Figure(String id, double price, SuperHero superHero, Dimension dimension) {
         this.id = id;
@@ -57,7 +58,12 @@ public class Figure {
                 '}';
     }
 
-    public void raisePrice(double amount){
+    public void raisePrice(double amount) {
         this.price += amount;
     }
+
+
+
+
+
 }

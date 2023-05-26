@@ -32,5 +32,10 @@ public class Main {
         System.out.println(cl);
 
         System.out.println(cl.whitCape());
+        System.out.println(cl.higherPrice());
+        System.out.println();
+        System.out.println(cl.getTotalPrice());
+        System.out.println();
+        System.out.println(cl.getMaxVolumen());
     }
 }
